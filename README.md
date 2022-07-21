@@ -2,7 +2,11 @@
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Qt](https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&logo=Qt&logoColor=white)
 <br>
-LightCalc+ is a scientific calculator project that uses multiple threads to calculate complex expressions entered by the user.
+LightCalc+ is a scientific calculator project that uses multiple threads to calculate complex expressions entered by the user.<br><br>
+<p align="center">
+  <img width="400" src="https://github.com/Klavvv/LightCalc/blob/main/LightCalcPreview.png" alt="LightCalc+ Preview">
+</p>
+
 # User Manual
 Below is a list of expressions, functions, and constants that the user can enter using the interface or the keyboard.
 ## Elementary mathematical operations
