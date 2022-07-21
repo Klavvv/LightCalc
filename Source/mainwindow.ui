@@ -1,0 +1,2586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-radius:20px;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QHBoxLayout" name="main_layout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="main_frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(221, 221, 221, 255));
+
+border-radius: 20px;
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="display_bar">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>250</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="top_bar_2">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: none;
+border-bottom-right-radius: 0; 
+border-bottom-left-radius: 0;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="top_bar_title_2">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>OpenHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color:none;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>5</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_title_2">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color:#eee;</string>
+                  </property>
+                  <property name="text">
+                   <string>LightCalc+</string>
+                  </property>
+                  <property name="textFormat">
+                   <enum>Qt::AutoText</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="top_bar_buttons_2">
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color:none;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <property name="spacing">
+                 <number>3</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>5</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="btn_question">
+                  <property name="minimumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>-1</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	border:none;
+	border-radius:10px;
+	background-color: #eee;
+	color: rgba(183, 26, 31, 255);
+	text-align: center;
+font-family: Arial;
+	font-size: 9px;
+	
+}
+
+QPushButton:hover{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>?</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_minimize">
+                  <property name="minimumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>-1</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	border:none;
+	border-radius:10px;
+	background-color: #eee;
+	color: rgba(183, 26, 31, 255);
+	text-align: center;
+font-family: Arial;
+	font-size: 9px;
+	
+}
+
+QPushButton:hover{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>_</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_exit">
+                  <property name="minimumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>-1</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	border:none;
+	border-radius:10px;
+	background-color: #eee;
+	color: rgba(183, 26, 31, 255);
+	text-align: center;
+font-family: Arial;
+	font-size: 9px;
+	
+}
+
+QPushButton:hover{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>×</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="display_frame">
+            <property name="styleSheet">
+             <string notr="true">background-color:none;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QTextEdit" name="insert_math">
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QTextEdit{
+	background-color:none;
+border:none;
+border-radius:0;
+color: #eee;
+selection-background-color:  rgba(50,50,50,100);
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+}</string>
+               </property>
+               <property name="inputMethodHints">
+                <set>Qt::ImhLowercaseOnly|Qt::ImhMultiLine</set>
+               </property>
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="horizontalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>2</height>
+                </size>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: #eee;</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_4">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_11">
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="copy_btn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	border:none;
+	border-radius:10px;
+	background-color: #eee;
+	color: rgba(183, 26, 31, 255);
+	text-align: center;
+font-family: Arial;
+	font-size: 9px;
+	
+}
+
+QPushButton:hover{
+	color: rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>copy!</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="labelResult">
+                  <property name="minimumSize">
+                   <size>
+                    <width>310</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>310</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>-1</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLabel{
+color:#eee;
+ text-align: right;
+font-family: &quot;Segoe UI&quot;;
+font-size: 22px;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="keyboard_bar">
+         <property name="styleSheet">
+          <string notr="true">background-color:none;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="topMargin">
+           <number>2</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="keyboard_tab">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="keyboard_func">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>120</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>5</number>
+                </property>
+                <item>
+                 <widget class="QFrame" name="frame_2">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_9">
+                   <property name="spacing">
+                    <number>5</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>2</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>2</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="insert_sin">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>sin</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_cos">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>cos</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_tan">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>tan</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_ctan">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>ctan</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_log">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>log</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <property name="spacing">
+                    <number>5</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>2</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>2</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="insert_arcsin">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>arcsin</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_arccos">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>arccos</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_arctan">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>arctan</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_pow">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>pow</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_ln">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>ln</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_3">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+                   <property name="spacing">
+                    <number>5</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>2</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>2</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="insert_sqrt">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>sqrt</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_cbrt">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>cbrt</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_pi">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>pi</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_e">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>e</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_sred">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #eee;
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 13px;
+	border: 1px solid rgba(183, 26, 31, 100);
+}
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ccc;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="keyboard_num">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>5</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QFrame" name="key_num_first">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <property name="spacing">
+                    <number>5</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="insert_7">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>7</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_8">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>8</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_9">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>9</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_lb">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>(</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_rb">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>)</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="key_num_second">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                   <property name="spacing">
+                    <number>5</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="insert_4">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>4</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_5">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>5</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_6">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>6</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_multiplication">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>×</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_division">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>÷</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="key_num_third">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <property name="spacing">
+                    <number>5</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="insert_1">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_3">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>3</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_plus">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>+</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_minus">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>-</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="key_num_fourth">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <property name="spacing">
+                    <number>5</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="insert_0">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>0</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_dot">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>.</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_ans">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>Ans</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="clear_btn">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #ddd;
+	border-radius:5px;
+font-family: &quot;Segoe UI&quot;;
+	font-size: 20px;
+border: 1px solid rgba(183, 26, 31, 40);
+}
+
+QPushButton:hover{
+	color:  rgba(183, 26, 31, 255);
+	background-color: #bbb;
+
+}
+QPushButton:pressed{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>AC</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="insert_enter">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>110</width>
+                       <height>45</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(183, 26, 31, 255), stop:1 rgba(226, 60, 146, 255));
+	border-radius:5px;
+	font-family: Arial;
+	font-size: 30px;
+}
+QPushButton:hover{
+	color: #eee;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(163, 06, 11, 255), stop:1 rgba(206, 40, 126, 255));
+
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>=</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="credits">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>10</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgba(183, 26, 31, 255);</string>
+            </property>
+            <property name="text">
+             <string>Created by Klaudiusz Rozenek</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

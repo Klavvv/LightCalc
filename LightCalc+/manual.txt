@@ -1,0 +1,60 @@
+DZIAŁANIA
+x + y	- dodawanie
+x - y	- odejmowanie
+x * y	- mnożenie
+x / y	- dzielenie
+
+FUNKCJE
+sin(<wyr>)
+cos(<wyr>)log(
+tan(<wyr>) // tg(<wyr>)
+ctg(<wyr>) // ctan(<wyr>)
+sqr(<wyr>) // sqrt(<wyr>)
+log(<wyr>)	
+pow(<a>;<b>)
+ln(<wyr>) // lna(<wyr>)
+acos(<wyr>) // arccos(<wyr>)
+asin(<wyr>) // arcsin(<wyr>)
+atan(<wyr>) // arctg(<wyr>) // arctan(<wyr>)
+cbrt(<wyr>)
+
+STAŁE
+e - liczba eulera
+pi - liczba pi
+
+SPOSOBY WPROWADZANIA
+(<wyr>)/(<wyr>)	- dzielenie (gdy mianownik / licznik nie jest pojedynczym elementem)
+(<wyr>)*(<wyr>) - mnożenie wyrażeń
+-(<wyr>)	- znak przed nawiasem
+
+mnożenie funkcji, wyrażeń w nawiasach i stałych nie musi być poprzedzone znakiem mnożenia
+sin(<wyr>)cos(<wyr>)tan(<wyr>)
+5e * 7pi + 9sin(<wyr>) + 9(2+3)(7+7)(2(2+3))cos(<wyr>)
+
+Użytkownik może wpisywać zarówno '.' jak i ',' w zapisie liczb zmiennoprzecinkowych.
+
+
+
+
+
+
+
+BŁĘDY
+100 - błędy programu
+	105 - błąd wewnętrzny wykrywania funkcji. Coś poszło naprawdę nie tak.
+
+200 - błędy użytkownika
+	201 - dzielenie przez zero
+	
+
+	211 - nieprawidłowa liczba nawiasów 
+	212 - nieprawidłowa liczba kropek się nie zgadza
+
+
+	251 - dla podanego argumentu wartość tangensa nie istnieje
+	252 - dla podanego argumentu wartość cotangensa nie istnieje
+	253 - dla podanego argumentu wartosc arccosinusa nie istnieje
+
+	261 - ujemna liczba pod pierwiastkiem kwadratowym
+
+	271 - ujemna liczba w funkcji logarytmicznej
